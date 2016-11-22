@@ -1,0 +1,23 @@
+{
+  "name": "ng-anim-svg",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiebj/ng-anim-svg.git"
+  },
+  "author": "Jonathan Hieb",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "svg",
+    "d3",
+    "animate"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "scripts": {
+  }
+}

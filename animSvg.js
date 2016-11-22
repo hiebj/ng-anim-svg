@@ -1,5 +1,5 @@
 angular
-    .module('anim-svg')
+    .module('anim-svg', [])
     .directive('animSvg', animSvg);
 
 function animSvg($timeout, $window, $document) {

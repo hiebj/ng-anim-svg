@@ -43,17 +43,17 @@ function animSvg($timeout, $window, $document) {
         for (var i = 0; i < attrs.length; i++) {
             $element.append(
                 angular.element($document[0].createElementNS(svgNS, 'animate'))
-                .attr('attributeName', attrs[i].dom)
-                .attr('attributeType', 'XML')
-                .attr('from', $element.attr(attrs[i].dom))
-                .attr('to', values[i])
-                .attr('begin', ($window.performance.now() + delay) + 'ms')
-                .attr('dur', duration + 'ms')
-                .attr('calcMode', 'spline')
-                .attr('keyTimes', '0; 1')
-                .attr('keySplines', easing)
-                .on('beginEvent', onBegin.bind(null, $element, attrs[i].dom, values[i]))
-                .on('endEvent', onEnd)
+                    .attr('attributeName', attrs[i].dom)
+                    .attr('attributeType', 'XML')
+                    .attr('from', $element.attr(attrs[i].dom))
+                    .attr('to', values[i])
+                    .attr('begin', ($window.performance.now() + delay) + 'ms')
+                    .attr('dur', duration + 'ms')
+                    .attr('calcMode', 'spline')
+                    .attr('keyTimes', '0; 1')
+                    .attr('keySplines', easing)
+                    .on('beginEvent', onBegin.bind(null, $element, attrs[i].dom, values[i]))
+                    .on('endEvent', onEnd)
             );
         }
     }

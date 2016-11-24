@@ -10,16 +10,12 @@ View a live demo on [Plnkr][plnkr-url].
 
 ## Installation
 
-**anim-svg** is available through NPM:
+**anim-svg** is available through NPM or Bower:
 
 ```text
-npm install ng-anim-svg
-```
-
-Or, via bower:
-
-```text
-bower install ng-anim-svg --save
+npm install ng-anim-svg  
+ - or -  
+bower install ng-anim-svg
 ```
 
 Include `animSvg.min.js` in your build or directly with a `<script>` tag and require the module in your module definition:

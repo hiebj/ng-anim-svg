@@ -12,6 +12,16 @@
             defaultEasing = '0.1 0.8 0.2 1';
 
         function link($scope, $element, $attrs) {
+            if ($element[0].namespaceURI !== svgNS) {
+                throw 'anim-svg: linked element ' +
+                    $element[0].tagName +
+                    ' not an SVG element';
+            } else {
+                doLink($scope, $element, $attrs);
+            }
+        }
+
+        function doLink($scope, $element, $attrs) {
             var animAttrs = collectAnimAttrs($attrs),
                 duration = $scope.$eval($attrs.animDuration),
                 delay = $attrs.animDelay ? $scope.$eval($attrs.animDelay) : 0,

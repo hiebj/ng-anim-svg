@@ -85,7 +85,8 @@ Angular expression that defines, in milliseconds, how long the animation should 
 
 `[anim-delay] (Number): default 0`  
 Angular expression that defines, in milliseconds, how long to wait before starting the animation.  
-This can be used in concert with `ng-repeat` and the `$index` reference to stagger animations. For example, `anim-delay="$index * 250"` will cause each successive element to wait 250ms after the previous element before beginning an animation (as shown in the Plnkr example above).  
+This can be used in concert with `ng-repeat` and the `$index` reference to stagger animations.  
+For example, `anim-delay="$index * 250"` will cause each successive element to wait 250ms after the previous element before beginning an animation (as shown in the Plnkr example above).  
 `anim-delay` is only computed once, when the directive is linked.
 
 `[anim-easing] (String): default '0.1 0.8 0.2 1'`

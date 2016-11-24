@@ -90,7 +90,7 @@ For example, `anim-delay="$index * 250"` will cause each successive element to w
 The `anim-delay` expression is only evaluated once, when the directive is linked.
 
 `[anim-easing] (String): default '0.1 0.8 0.2 1'`  
-Angular expression that evaluates to a `String` containing a four values defining a cubic Bézier function that controls interval pacing in the same format as the [keySplines][keySplines-url] attribute of the SVG `<animate>` tag.  
+Angular expression that evaluates to a `String` containing a four values defining a cubic Bézier function that controls interval pacing. The string uses the same format as the [keySplines][keySplines-url] attribute of the SVG `<animate>` tag.  
 The `anim-easing` expression is only evaluated once, when the directive is linked.
 
 `anim-attr-* (Number)`  

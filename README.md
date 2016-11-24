@@ -81,20 +81,21 @@ A no-value attribute that links the animation directive to the target element.
 
 `anim-duration (Number)`  
 Angular expression that defines, in milliseconds, how long the animation should last.  
-`anim-duration` is only computed once, when the directive is linked.
+The `anim-duration` expression is only evaluated once, when the directive is linked.
 
 `[anim-delay] (Number): default 0`  
 Angular expression that defines, in milliseconds, how long to wait before starting the animation.  
 This can be used in concert with `ng-repeat` and the `$index` reference to stagger animations.  
 For example, `anim-delay="$index * 250"` will cause each successive element to wait 250ms after the previous element before beginning an animation (as shown in the Plnkr example above).  
-`anim-delay` is only computed once, when the directive is linked.
+The `anim-delay` expression is only evaluated once, when the directive is linked.
 
 `[anim-easing] (String): default '0.1 0.8 0.2 1'`  
-Angular expression that evaluates to a `String` containing a four values defining a  cubic Bézier function that controls interval pacing in the same format as the [keySplines][keySplines-url] attribute of the SVG `<animate>` tag.  
-`anim-easing` is only computed once, when the directive is linked.
+Angular expression that evaluates to a `String` containing a four values defining a cubic Bézier function that controls interval pacing in the same format as the [keySplines][keySplines-url] attribute of the SVG `<animate>` tag.  
+The `anim-easing` expression is only evaluated once, when the directive is linked.
 
 `anim-attr-* (Number)`  
-Angular expression that evaluates to a value defining the "destination" of the animation. Correlates to the [to][to-url] attribute of the SVG `<animate>` tag. The [from][from-url] value is taken from the current value of the attribute when the animation begins.
+Angular expression that evaluates to a value defining the "destination" of the animation.  
+Correlates to the [to][to-url] attribute of the SVG `<animate>` tag. The [from][from-url] value is taken from the current value of the attribute when the animation begins.  
 For example, `anim-attr-x="250"` will animate the element from its current `x` position to `x="250"` over the duration and easing specified above.  
 The value of `anim-attr-*` is `$watched`, so anytime the evaluated value of the expression changes, the element's attribute will be animated from its current value to the new value.
 

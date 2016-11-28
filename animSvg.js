@@ -25,7 +25,7 @@
             var animAttrs = collectAnimAttrs($attrs),
                 duration = $scope.$eval($attrs.animDuration),
                 delay = $attrs.animDelay ? $scope.$eval($attrs.animDelay) : 0,
-                easing = $attrs.animEasing ? $scope.$eval(animEasing) : defaultEasing;
+                easing = $attrs.animEasing ? $scope.$eval($attrs.animEasing) : defaultEasing;
             $scope.$watchGroup(
                 animAttrs.map(function(animAttr) { return $attrs[animAttr.normalized]; }),
                 function(animValsNew) {

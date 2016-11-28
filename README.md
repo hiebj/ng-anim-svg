@@ -2,9 +2,9 @@
 
 **anim-svg** is an AngularJS directive that implements declarative attribute animations on SVG elements.
 
-Angular provides data-binding for arbitrary attributes in SVG documents using [ng-attr][ng-attr-url]. However, it does not natively support any convenient method to animate those attributes. This significantly limits Angular's ability to replace D3's jQuery-like DOM manipulation with cleaner, more readable template binding, which also serves to separate DOM manipulation from more readily unit-testable code.
+Angular provides data-binding for arbitrary attributes in SVG documents using [ng-attr][ng-attr-url]. However, it does not natively support any convenient method to animate those attributes. This significantly limits Angular's ability to replace D3's jQuery-like DOM manipulation with cleaner, more readable template binding.
 
-To remedy that limitation, this directive adds support for template attribute animations in a familiar syntax similar to that used by D3 [transitions][d3-transition-url].
+To remedy that limitation, this directive adds support for template attribute animations in a familiar syntax similar to that used by D3 [transitions][d3-transition-url]. The end result is a clean separation of DOM and logic, allowing the logic to be unit-tested.
 
 View a live demo on [Plnkr][plnkr-url].
 
@@ -14,7 +14,7 @@ View a live demo on [Plnkr][plnkr-url].
 
 ```text
 npm install ng-anim-svg  
- - or -  
+ -or-  
 bower install ng-anim-svg
 ```
 

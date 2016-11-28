@@ -6,7 +6,7 @@ Angular provides data-binding for arbitrary attributes in SVG documents using [n
 
 To remedy that limitation, this directive adds support for template attribute animations in a familiar syntax similar to that used by D3 [transitions][d3-transition-url]. The end result is a clean separation of DOM and logic, allowing the logic to be unit-tested.
 
-View a live demo on [Plnkr][plnkr-url].
+View a live demo on [Plnkr][plnkr-url]. View the source for the demo [here][demosrc-url].
 
 ## Installation
 
@@ -98,6 +98,7 @@ The value of `anim-attr-*` is `$watched`, so anytime the evaluated value of the 
 [ng-attr-url]: https://docs.angularjs.org/guide/interpolation#-ngattr-for-binding-to-arbitrary-attributes
 [d3-transition-url]: https://github.com/d3/d3-transition#transition
 [plnkr-url]: http://plnkr.co/edit/N78gvq?p=preview
+[demosrc-url]: https://github.com/hiebj/ng-d3
 [mdn-animate-url]: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate 
 [expression-url]: https://docs.angularjs.org/guide/expression
 [scale-url]: https://github.com/d3/d3/blob/master/API.md#scales-d3-scale

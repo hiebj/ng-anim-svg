@@ -10,6 +10,8 @@ View a live demo on [Plnkr][plnkr-url]. View the source for the demo [here][demo
 
 ## Installation
 
+**NOTE** this is still under construction and not yet published - I will publish the package when I have finished polishing the initial release.
+
 **anim-svg** is available through NPM or Bower:
 
 ```text

@@ -13,9 +13,9 @@
 
         function link($scope, $element, $attrs) {
             if ($element[0].namespaceURI !== svgNS) {
-                throw 'anim-svg: linked element ' +
+                throw 'anim-svg: linked element <' +
                     $element[0].tagName +
-                    ' not an SVG element';
+                    '> is not an SVG element';
             } else {
                 doLink($scope, $element, $attrs);
             }

@@ -97,7 +97,7 @@ The value of `anim-attr-*` is `$watch`-ed, so anytime the evaluated value of the
 
 [ng-attr-url]: https://docs.angularjs.org/guide/interpolation#-ngattr-for-binding-to-arbitrary-attributes
 [d3-transition-url]: https://github.com/d3/d3-transition#transition
-[plnkr-url]: http://plnkr.co/edit/N78gvq?p=preview
+[plnkr-url]: http://run.plnkr.co/VkKbURx5Wx9EOMt5/
 [demosrc-url]: https://github.com/hiebj/ng-d3
 [mdn-animate-url]: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate 
 [expression-url]: https://docs.angularjs.org/guide/expression

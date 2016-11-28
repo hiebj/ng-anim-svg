@@ -93,7 +93,7 @@ The `anim-easing` expression is only evaluated once, when the directive is linke
 Angular expression that evaluates to a value defining the "destination" of the animation.  
 Correlates to the [to][to-url] attribute of the SVG `<animate>` tag. The [from][from-url] value is taken from the current value of the attribute when the animation begins.  
 For example, `anim-attr-x="250"` will animate the element from its current `x` position to `x="250"` over the duration and easing specified above.  
-The value of `anim-attr-*` is `$watched`, so anytime the evaluated value of the expression changes, the element's attribute will be animated from its current value to the new value.
+The value of `anim-attr-*` is `$watch`-ed, so anytime the evaluated value of the expression changes, the element's attribute will be animated from its current value to the new value.
 
 [ng-attr-url]: https://docs.angularjs.org/guide/interpolation#-ngattr-for-binding-to-arbitrary-attributes
 [d3-transition-url]: https://github.com/d3/d3-transition#transition
